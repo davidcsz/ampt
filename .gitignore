@@ -38,3 +38,6 @@ jspm_packages
 
 # Tests
 test.js
+
+# Private
+config.js
