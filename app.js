@@ -18,6 +18,35 @@ server.route({
     }
 });
 
+// Fitbit authentication
+server.route({
+    method: 'GET',
+    path: '/spotify-auth',
+    handler: function (request, reply) {
+        if (request.query.code === undefined) {
+            console.log('Path hit:', request);
+            console.log('Sending user to Fitbit auth page');
+
+            oauth.getAuthCode(config.dev.appCredentials.fitbit);
+            reply('Fitbit auth...');
+        } else if (request.query.code !== undefined) {
+            console.log('Path hit:', request);
+            console.log('Got Fitbit auth code');
+            console.log('Getting Fitbit access token');
+
+            oauth.getAccessToken(request.query.code, config.dev.appCredentials.Fitbit)
+            .catch((accessTokenRequestError) => {
+                console.log('Failed to retrieve Fitbit access_token! Error: ' + accessTokenRequestError);
+                reply('Failed to get a Fitbit access token. :(')
+            })
+            .then((accessTokenJson) =>{
+                console.log('Successfully retrieved Fitbit access_token: ' + accessTokenJson);
+                reply('Got Fitbit access token!');
+            });
+        }
+    }
+});
+
 // Spotify authentication
 server.route({
     method: 'GET',
@@ -27,15 +56,22 @@ server.route({
             console.log('Path hit:', request);
             console.log('Sending user to Spotify auth page');
 
-            oauth.getAuthCode(config.appCredentials.spotify);
+            oauth.getAuthCode(config.dev.appCredentials.spotify);
             reply('Spotify auth...');
         } else if (request.query.code !== undefined) {
             console.log('Path hit:', request);
             console.log('Got Spotify auth code');
             console.log('Getting Spotify access token');
 
-            oauth.getAccessToken(request.query.code);
-            reply('Got Spotify access token!');
+            oauth.getAccessToken(request.query.code, config.dev.appCredentials.spotify)
+            .catch((accessTokenRequestError) => {
+                console.log('Failed to retrieve Spotify access_token! Error: ' + accessTokenRequestError);
+                reply('Failed to get Spotify access token. :(')
+            })
+            .then((accessTokenJson) =>{
+                console.log('Successfully retrieved Spotify access_token: ' + accessTokenJson);
+                reply('Got Spotify access token!');
+            });
         }
     }
 });
