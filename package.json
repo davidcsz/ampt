@@ -1,0 +1,19 @@
+{
+  "name": "ampt",
+  "version": "1.0.0",
+  "description": "...get ampt I guess.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squlnt/ampt.git"
+  },
+  "author": "David Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squlnt/ampt/issues"
+  },
+  "homepage": "https://github.com/squlnt/ampt#readme"
+}
