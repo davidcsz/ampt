@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/squlnt/ampt#readme",
   "dependencies": {
-    "hapi": "^15.0.3"
+    "hapi": "^15.0.3",
+    "node-fetch": "^1.6.1",
+    "openurl": "^1.1.1"
   }
 }
