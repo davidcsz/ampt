@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/squlnt/ampt/issues"
   },
-  "homepage": "https://github.com/squlnt/ampt#readme"
+  "homepage": "https://github.com/squlnt/ampt#readme",
+  "dependencies": {
+    "hapi": "^15.0.3"
+  }
 }
