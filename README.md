@@ -1,3 +1,3 @@
 # A M P T
 
-Spotify playlists for your specific workouts based on historical heart rate data.
+Dynamically created Spotify playlists for your specific workouts based on historical heart rate data.
