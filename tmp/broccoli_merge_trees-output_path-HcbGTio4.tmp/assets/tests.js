@@ -1,0 +1,1 @@
+/Users/david/Projects/ampt/tmp/broccoli_merge_trees-input_base_path-Tvxi1OAX.tmp/0/assets/tests.js

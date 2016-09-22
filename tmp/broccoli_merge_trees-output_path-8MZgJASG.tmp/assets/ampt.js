@@ -1,0 +1,1 @@
+/Users/david/Projects/ampt/tmp/source_map_concat-output_path-yFCyk7iE.tmp/assets/ampt.js

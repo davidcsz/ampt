@@ -1,0 +1,1 @@
+/Users/david/Projects/ampt/tmp/broccoli_merge_trees-input_base_path-7orqN82L.tmp/0/test-helper.jshint.js

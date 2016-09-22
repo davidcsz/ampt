@@ -1,0 +1,1 @@
+/Users/david/Projects/ampt/tmp/creator-output_path-36e2F8Im.tmp/version.js
