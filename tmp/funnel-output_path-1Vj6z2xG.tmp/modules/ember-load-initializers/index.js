@@ -1,1 +1,0 @@
-/Users/david/Projects/ampt/tmp/funnel-input_base_path-PPIhBYMV.tmp/0/index.js

@@ -1,1 +1,0 @@
-/Users/david/Projects/ampt/tmp/funnel-input_base_path-I2g9ReWe.tmp/0//app-config.js
