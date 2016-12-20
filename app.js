@@ -21,7 +21,7 @@ server.route({
 // Fitbit authentication
 server.route({
     method: 'GET',
-    path: '/spotify-auth',
+    path: '/fitbit-auth',
     handler: function (request, reply) {
         if (request.query.code === undefined) {
             console.log('Path hit:', request);
