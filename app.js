@@ -1,3 +1,8 @@
+/*
+* Author: David Sanchez
+*
+*/
+
 'use strict';
 
 const hapi = require('hapi');
